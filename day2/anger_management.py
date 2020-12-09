@@ -23,4 +23,4 @@ while i <= population:
         counter += 1
     i += 1
 
-print(counter)
+print(f'Number of presents delivered: {counter}')

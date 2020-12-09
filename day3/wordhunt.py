@@ -26,4 +26,4 @@ for line in allLines:
         if word in line:
             allWords.remove(word)
 
-print(allWords)
+print(f'Words missing from matrix: {sorted(allWords)}')
