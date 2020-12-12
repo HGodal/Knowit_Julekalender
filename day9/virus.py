@@ -1,8 +1,6 @@
 import numpy as np
 
-sick_elves = np.array(
-    [list(line) for line in open('elves.txt').readlines()]
-) == 'S'
+sick_elves = np.array([list(line) for line in open('elves.txt')]) == 'S'
 
 num_sick_elves = [sick_elves.sum()]
 
