@@ -1,9 +1,8 @@
 with open('forest.txt') as f:
-    rows = [list(line)[:-1] for line in f]
+    rows = [list(line) for line in f]
     cols = [list(col) for col in zip(*rows)]
 
 trees = [[]]
-
 for col in cols:
     if col.count('#') == 0:
         trees.append([])
@@ -11,8 +10,7 @@ for col in cols:
         trees[-1].append(''.join(col))
 
 
-all_trees = list(filter(None, trees))  # Removes empty columns
+all_trees = list(filter(None, trees))
+symmetrical_trees = sum([tree[::1] == tree[::-1] for tree in all_trees])
 
-symTrees = sum([tree[::1] == tree[::-1] for tree in all_trees])
-
-print(f'Number of symmetrical trees: {symTrees}')
+print(f'Number of symmetrical trees: {symmetrical_trees}')
