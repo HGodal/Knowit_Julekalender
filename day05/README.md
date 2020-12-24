@@ -17,6 +17,9 @@ Husmusen beveger seg 1m for hver forflytning raportert i ruta, og vil ikke på n
 
 Hva er arealet av julenissens hus ut ifra husmusens rute gitt i [denne fila](rute.txt)?
 
+
+## Eksempel
+
 For ruta HHOOVVNN får man et kvadrat på 2x2 med areal på 4:
 
 ![](2x2.png)
