@@ -14,7 +14,7 @@ def coordinate(direction):
 
 
 currentCoordinate = [0, 0]
-with open("day5.txt") as f:
+with open("rute.txt") as f:
     for line in f:
         xCoor = np.zeros(len(line))
         yCoor = np.zeros(len(line))
