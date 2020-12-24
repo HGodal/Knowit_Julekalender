@@ -1,9 +1,4 @@
-with open('numbers.txt') as f:
-    for line in f:
-        notFound = True
-        i = 0
-        while notFound:
-            if str(i) not in line:
-                print(f'The missing number is {i}')
-                notFound = False
-            i += 1
+nums = [int(line) for line in open('numbers.txt').readline().split(',')]
+
+totalsum = ((len(nums)+1)*(len(nums)+2))//2
+print(f'Tallet som mangler er {totalsum - sum(nums)}')
